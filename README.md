@@ -28,6 +28,6 @@ Zahtjev za rješavanje ovog problema je izrada softverskog rješenja, odnosno ap
 (U root repozitorija učitajte zadatak koji ste dobili i potom ovdje stavite link na njegovo otvaranje!)
 
 ## Resursi
-(Zadaće je obvezno predati u obliku Wiki stranica na ovom repozitoriju. Slike i druge artefakte koje ćete koristiti na wiki stranicama smjestite u mapu dokumentacije u repozitoriju!)
+Sve slike se nalaze u mapi Documentation.
 
 Svi resursi nalaze se u mapi _Documentation_.
