@@ -15,7 +15,7 @@ Sustav za praćenje narudžbi u studentskom restoranu
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Ime i prezime | atikvan22@foi.hr | 0016158840 | atikan
+Ime i prezime | atikvan22@foi.hr | 0016158840 | atikvan
 
 
 ## Opis domene
