@@ -19,10 +19,10 @@ Ime i prezime | atikvan22@foi.hr | 0016158840 | atikvan
 
 
 ## Opis domene
-Problem se očitava u nezadovoljstvu korisnika menze, studenata
+Problem se očitava u nezadovoljstvu korisnika menze, studenata. Studenti se žale na vrijeme čekanja u redu i vrijeme spremanja narudžbe što stvara veliku nervozu. Također problem stvara i loša kvaliteta pojedinih jela.
 
 ## Specifikacija projekta
-(Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
+Zahtjev za rješavanje ovog problema je izrada softverskog rješenja, odnosno aplikacije koja će povećati zadovoljstvo korisnika i poboljšati rad menze. Putem aplikacije studenti bi mogli naručiti jedan od tri dostupna menija. Nakon što je narudžba poslužena studenti bi ju recenzirali u aplikaciji ocjenama od 1 do 5 za okus i količinu te opcionalnim komentarom. Aplikacijama bi prema tim ocjenama napravila izvještaje o kvaliteti menze, najpopularnijim jelima i brzini pripreme jela kako bi zaposlenici prema tome mogli poboljšati rad menze.
 
 ## Zadatak
 (U root repozitorija učitajte zadatak koji ste dobili i potom ovdje stavite link na njegovo otvaranje!)
