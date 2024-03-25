@@ -15,11 +15,11 @@ Sustav za praćenje narudžbi u studentskom restoranu
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Ime i prezime | atikvan22@foi.hr | 000000000 | atikan
+Ime i prezime | atikvan22@foi.hr | 0016158840 | atikan
 
 
 ## Opis domene
-(Vlastitim riječima opišite domenu ili problem koji pokriva projekt vaše zadaće!)
+Problem se očitava u nezadovoljstvu korisnika menze, studenata
 
 ## Specifikacija projekta
 (Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
