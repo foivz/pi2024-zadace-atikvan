@@ -34,7 +34,7 @@ namespace StudentskiRecenziraj
             {
                 if (txtUsername.Text == username && txtPassword.Text == password)
                 {
-                   FrmRecenzije  frmRecenzije = new FrmRecenzije();
+                    FrmRecenzije frmRecenzije = new FrmRecenzije();
                     Hide();
                     frmRecenzije.ShowDialog();
                     Close();
@@ -45,11 +45,6 @@ namespace StudentskiRecenziraj
                 }
 
             }
-        }
-
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

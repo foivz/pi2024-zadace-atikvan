@@ -28,35 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvRecenzije = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRecenzije)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // dgvRecenzije
-            // 
-            this.dgvRecenzije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRecenzije.Location = new System.Drawing.Point(-6, 1);
-            this.dgvRecenzije.Name = "dgvRecenzije";
-            this.dgvRecenzije.RowHeadersWidth = 51;
-            this.dgvRecenzije.RowTemplate.Height = 24;
-            this.dgvRecenzije.Size = new System.Drawing.Size(805, 455);
-            this.dgvRecenzije.TabIndex = 0;
-            // 
-            // FrmRecenzije
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dgvRecenzije);
-            this.Name = "FrmRecenzije";
-            this.Text = "Recenzije";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRecenzije)).EndInit();
-            this.ResumeLayout(false);
-
+            this.Text = "FrmRecenzije";
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvRecenzije;
     }
 }
