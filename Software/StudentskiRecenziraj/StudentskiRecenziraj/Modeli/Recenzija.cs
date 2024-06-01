@@ -8,11 +8,11 @@ namespace StudentskiRecenziraj.Modeli
 {
     public class Recenzija
     {
-        public int idJelo { get; set; }
-        public string naziv { get; set; }
-        public int ocjenaOkus { get; set; }
-        public string ocjenaKolicina { get; set; }
-        public string komentar { get; set; }
+        public int Id { get; set; }
+        public string Naziv { get; set; }
+        public int OcjenaOkus { get; set; }
+        public int  OcjenaKolicina { get; set; }
+        public string Komentar { get; set; }
 
     }
 }

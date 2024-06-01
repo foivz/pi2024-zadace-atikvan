@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DBLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -49,7 +50,7 @@ namespace StudentskiRecenziraj
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-
+            DB.SetConfiguration("PI2324_atikvan22_DB", "PI2324_atikvan22_User", "X9(+kNUO");
         }
     }
 }

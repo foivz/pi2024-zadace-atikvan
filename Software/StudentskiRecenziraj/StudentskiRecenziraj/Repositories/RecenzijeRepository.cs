@@ -7,16 +7,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 
 namespace StudentskiRecenziraj.Repositories
 {
     public class RecenzijeRepository
     {
-        public static Recenzija GetRecenzija(int id)
+        public static Recenzija GetRecenzije(int id)
         {
             Recenzija recenzija = null;
 
-            string sql = $"SELECT * FROM Recenzija WHERE Id={id}";
+            string sql = $"SELECT * FROM Recenzije WHERE Id={id}";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             if (reader.HasRows)
@@ -29,14 +30,42 @@ namespace StudentskiRecenziraj.Repositories
             return recenzija;
                 
         }
-        public static List<Recenzija> GetRecenzijas()
+        public static List<Recenzija> GetRecenzije()
         {
-            List<Recenzija> recenzijas = new List<Recenzija>();
             string sql = "SELECT * FROM Recenzije";
             DB.OpenConnection();
+            List<Recenzija> recenzije = new List<Recenzija>();
+            var reader = DB.GetDataReader(sql);
 
+            while (reader.Read())
+            {
+                Recenzija recenzija = CreateObject(reader);
+                recenzije.Add(recenzija);
+            }
+            reader.Close();
+            DB.CloseConnection();
+            return recenzije;
+        }
+        private static Recenzija CreateObject(SqlDataReader reader)
+        {
+            int id = int.Parse(reader["Id"].ToString());
+            string naziv = reader["Naziv"].ToString();
+            int ocjenaOkus = int.Parse(reader["OcjenaOkus"].ToString());
+            int ocjenaKolicina = int.Parse(reader["OcjenaKolicina"].ToString());
+            string komentar = reader["Komentar"].ToString();
+
+            var recenzija = new Recenzija
+            {
+                Id = id,
+                Naziv = naziv,
+                OcjenaOkus = ocjenaOkus,
+                OcjenaKolicina = ocjenaKolicina,
+                Komentar = komentar
+            };
+            return recenzija;
 
         }
+
 
     }
 }
