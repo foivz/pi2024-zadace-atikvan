@@ -43,12 +43,48 @@ namespace StudentskiRecenziraj
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Recenzija selectedRecenzija = dgvRecenzije.CurrentRow.DataBoundItem as Recenzija;
+            FrmUpdate frmUpdate = new FrmUpdate(selectedRecenzija);
+            Hide();
+            frmUpdate.ShowDialog();
+            Close();
+            Osjvezi();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+        public void Osjvezi()
+        {
+            dgvRecenzije.DataSource = RecenzijeRepository.GetRecenzije();
+
+        }
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Recenzija selectedRecenzija = dgvRecenzije.CurrentRow.DataBoundItem as Recenzija;
+            RecenzijeRepository.Obrisi(selectedRecenzija.Id);
+            Osjvezi();
+        }
+
+        private void btnRecenziraj_Click(object sender, EventArgs e)
+        {
+            FrmUnos frmUnos = new FrmUnos();
+            Hide();
+            frmUnos.ShowDialog();
+            Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            List<Recenzija> recenzije = RecenzijeRepository.SearchRecenzije(txtSearch.Text);
+            dgvRecenzije.DataSource = recenzije;
+            
         }
     }
 }

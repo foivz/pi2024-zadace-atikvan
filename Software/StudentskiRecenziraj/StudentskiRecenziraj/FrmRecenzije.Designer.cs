@@ -33,22 +33,26 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnRecenziraj = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecenzije)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvRecenzije
             // 
             this.dgvRecenzije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRecenzije.Location = new System.Drawing.Point(85, 75);
+            this.dgvRecenzije.Location = new System.Drawing.Point(30, 75);
             this.dgvRecenzije.Name = "dgvRecenzije";
             this.dgvRecenzije.RowHeadersWidth = 51;
             this.dgvRecenzije.RowTemplate.Height = 24;
-            this.dgvRecenzije.Size = new System.Drawing.Size(663, 258);
+            this.dgvRecenzije.Size = new System.Drawing.Size(758, 258);
             this.dgvRecenzije.TabIndex = 0;
             this.dgvRecenzije.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnUpdate
             // 
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnUpdate.Location = new System.Drawing.Point(206, 405);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(97, 33);
@@ -65,15 +69,17 @@
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Obriši";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnRecenziraj
             // 
-            this.btnRecenziraj.Location = new System.Drawing.Point(610, 404);
+            this.btnRecenziraj.Location = new System.Drawing.Point(627, 30);
             this.btnRecenziraj.Name = "btnRecenziraj";
             this.btnRecenziraj.Size = new System.Drawing.Size(138, 34);
             this.btnRecenziraj.TabIndex = 3;
             this.btnRecenziraj.Text = "Nova recenzija";
             this.btnRecenziraj.UseVisualStyleBackColor = true;
+            this.btnRecenziraj.Click += new System.EventHandler(this.btnRecenziraj_Click);
             // 
             // label1
             // 
@@ -85,11 +91,42 @@
             this.label1.Text = "StudentskiRecenziraj";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(531, 374);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(109, 16);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Pretraži recenzije";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(534, 405);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(152, 22);
+            this.txtSearch.TabIndex = 6;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(704, 404);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 7;
+            this.btnSearch.Text = "Pretraži";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // FrmRecenzije
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Plum;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRecenziraj);
             this.Controls.Add(this.btnDelete);
@@ -110,5 +147,8 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnRecenziraj;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

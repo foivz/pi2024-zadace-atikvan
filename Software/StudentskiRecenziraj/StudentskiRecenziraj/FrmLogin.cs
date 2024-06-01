@@ -52,5 +52,10 @@ namespace StudentskiRecenziraj
         {
             DB.SetConfiguration("PI2324_atikvan22_DB", "PI2324_atikvan22_User", "X9(+kNUO");
         }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

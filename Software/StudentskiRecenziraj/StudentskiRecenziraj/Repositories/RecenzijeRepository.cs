@@ -65,7 +65,38 @@ namespace StudentskiRecenziraj.Repositories
             return recenzija;
 
         }
+        public static void Obrisi (int id)
+        {
+            string sql = $"DELETE FROM Recenzije Where Id={id}";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+        public static void Azuriraj(int id, string naziv, int ocjenaOkus, int ocjenaKolicina, string komentar)
+        {
+            string sql = $"UPDATE Recenzije SET Naziv = '{naziv}', OcjenaOkus='{ocjenaOkus}', OcjenaKolicina='{ocjenaKolicina}', Komentar='{komentar}' WHERE Id={id}";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
 
+        }
+        public static List<Recenzija> SearchRecenzije(string naziv)
+        {
+            List<Recenzija> recenzije = new List<Recenzija>();
 
+            string sql = $"SELECT * FROM Recenzije WHERE Naziv LIKE '{naziv}%'";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Recenzija recenzija = CreateObject(reader);
+                recenzije.Add(recenzija);
+            }
+            reader.Close();
+            DB.CloseConnection();
+            return recenzije;
+        }
+
+       
     }
 }
