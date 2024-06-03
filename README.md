@@ -8,7 +8,7 @@ Molim vas izmijenite ovaj dokument kako biste u njemu naveli naziv i kratak opis
 A sada, vrijeme je za prvi korak rada na vašem projektu. 🙂 Za upis/opis vašeg programskog proizvoda molimo vas koristite **predložak** koji je naveden u nastavku. Započnite tako da kliknete na *olovku* u desnom gornjem kutu ovoga dokumenta te izbrišite sve što je iznad _Naziva projekta_, kao i sve upute koje su navedene u zagradama u predlošku ispod.
 
 # Naziv projekta
-Sustav za praćenje narudžbi u studentskom restoranu
+Sustav za praćenje narudžbi u studentskom restoranu - StudentskiRecenziraj
 
 ## Podaci o studentu
 (Ispod promijenite samo drugi redak tablice!)
@@ -17,6 +17,8 @@ Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
 Ime i prezime | atikvan22@foi.hr | 0016158840 | atikvan
 
+# Korisničko ime i lozinka za prijavu u 3. zadaći: 
+- korisničko ime: student, lozinka:menza
 
 ## Opis domene
 Problem se očitava u nezadovoljstvu korisnika menze, studenata. Studenti se žale na vrijeme čekanja u redu i vrijeme spremanja narudžbe što stvara veliku nervozu. Također problem stvara i loša kvaliteta pojedinih jela.
